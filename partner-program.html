@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+	<meta charset="UTF-8">
+	<title>Goodwin</title>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+ 
+	<header class="header">
+		<div class="container">
+			<a href="/" class="header__logo">
+				<img src="images/logo.svg" alt="Goodwin">
+			</a>
+
+			<div class="header__left">
+				<div class="h-user">
+					<div class="h-user__level">
+						<span>3</span>
+						<div class="h-user__level-text">уровень</div>
+					</div>
+					<div class="h-user__left">
+						<div class="h-user__name">Константин Петров</div>
+						<div class="h-user__id">
+							<span>Id</span> 134AbbdksBcs
+						</div>
+					</div>
+				</div>
+
+				<div class="h-purses">
+					<div class="h-purse h-purse--white">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.17285 21.122V6.32812C2.17285 4.11898 3.96371 2.32812 6.17285 2.32812H17.6495C19.8586 2.32812 21.6495 4.11899 21.6495 6.32813V7.02661" stroke="#4E4E4E" stroke-width="3"/>
+								<path d="M2.17285 7.31396V22.1079C2.17285 24.317 3.96371 26.1079 6.17285 26.1079H21.8417C24.0509 26.1079 25.8417 24.317 25.8417 22.1079V11.314C25.8417 9.10483 24.0509 7.31396 21.8417 7.31396H8.63334" stroke="#4E4E4E" stroke-width="3" stroke-linecap="round"/>
+								<path d="M21.3757 20.0068C19.5553 20.0068 18.0796 18.5311 18.0796 16.7108C18.0796 14.8904 19.5553 13.4147 21.3757 13.4147L27.2446 13.4147C27.4871 13.4147 27.6837 13.6113 27.6837 13.8538L27.6837 19.5677C27.6837 19.8102 27.4871 20.0068 27.2446 20.0068L21.3757 20.0068Z" fill="#F8F8F8" stroke="#4E4E4E" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.5405" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.5405 0.777344)" fill="#4E4E4E"/>
+								<rect x="22.8933" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 22.8933 12.145)" fill="#4E4E4E"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--white">
+								<div class="h-purse-item__title">White-кошелек</div>
+								<div class="h-purse-item__value">1 339 999<span> GС</span></div>
+							</div>
+						</div>
+
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">White-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+								<div class="h-purse-info-header__right">Для участия в программах пополните White-кошелек</div>
+							</div>
+							<div class="h-purse-info-history">
+								<div class="h-purse-info-history__title">История</div>
+								<ul class="h-purse-info-history__list">
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">1 345 $</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#" class="h-purse-info__btn h-purse-info__btn--dark btn">
+								<img src="images/icon-top-up.svg" alt="top-up">
+								Пополнить
+							</a>
+						</div>
+					</div>
+					<div class="h-purse h-purse--green">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.74902 21.122V6.32812C1.74902 4.11898 3.53988 2.32812 5.74902 2.32812H17.2256C19.4348 2.32812 21.2256 4.11899 21.2256 6.32813V7.02661" stroke="white" stroke-width="3"/>
+								<path d="M1.74902 7.31396V22.1079C1.74902 24.317 3.53989 26.1079 5.74903 26.1079H21.4179C23.6271 26.1079 25.4179 24.317 25.4179 22.1079V11.314C25.4179 9.10483 23.6271 7.31396 21.4179 7.31396H8.20951" stroke="white" stroke-width="3" stroke-linecap="round"/>
+								<path d="M20.9518 20.0068C19.1315 20.0068 17.6558 18.5311 17.6558 16.7108C17.6558 14.8904 19.1315 13.4147 20.9518 13.4147L26.8208 13.4147C27.0633 13.4147 27.2599 13.6113 27.2599 13.8538L27.2599 19.5677C27.2599 19.8102 27.0633 20.0068 26.8208 20.0068L20.9518 20.0068Z" fill="#14D279" stroke="white" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.709" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.709 0.777344)" fill="white"/>
+								<rect x="23.0618" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 23.0618 12.145)" fill="white"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--green">
+								<div class="h-purse-item__title">Green-кошелек</div>
+								<div class="h-purse-item__value">444 999<span> GС</span></div>
+							</div>
+						</div>
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">Green-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+
+								<div class="h-purse-info-header__right">
+									Вся прибыль по программам и бонусам начисляется в Green-кошелек
+								</div>
+							</div>
+
+							<div class="h-purse-info-blocks">
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--dark">
+									<div class="h-purse-info-blocks__title">Доступно</div>
+									<div class="h-purse-info-blocks__value">325 345 GC</div>
+									<div class="h-purse-info-blocks__text">
+										<img src="images/icon-withdraw.svg" alt="Вывести">
+										Вывести
+									</div>
+								</div>
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--light">
+									<div class="h-purse-info-blocks__title">Заморожено</div>
+									<div class="h-purse-info-blocks__value">25 345 GC</div>
+									<div class="h-purse-info-blocks__text">
+										<img src="images/icon-clock.svg" alt="icon">
+										35 дней
+									</div>
+								</div>
+							</div>
+
+							<a href="#" class="h-purse-info__btn h-purse-info__btn--white btn">
+								<img src="images/icon-reinvest.svg" alt="reinvest">
+								Реинвестировать
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hamburger-menu">
+					<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="21.51" y="19.333" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 19.333)" fill="#2ADF91"/>
+						<rect x="21.51" y="10.0552" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 10.0552)" fill="#2ADF91"/>
+						<rect x="21.51" y="0.777344" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 0.777344)" fill="#2ADF91"/>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<aside class="sidebar">
+		<div class="sidebar__close">
+			<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="15.4709" y="0.316895" width="3.65264" height="20.7284" rx="1" transform="rotate(45 15.4709 0.316895)" fill="#2ADF91"/>
+				<rect x="18.0535" y="14.9741" width="3.65264" height="20.7284" rx="1" transform="rotate(135 18.0535 14.9741)" fill="#2ADF91"/>
+			</svg>
+		</div>
+
+		<a href="/" class="sidebar__logo">
+			<img src="images/logo.svg" alt="Goodwin">
+		</a>
+
+		<div class="sidebar__inner">
+			<div class="s-user-info">
+				<div class="s-user-info__container">
+					<div class="s-user-info__name">Константин Петров</div>
+					<div class="s-user-info__level">
+						<span>3</span>
+						<div class="s-user-info__level-text">уровень</div>
+					</div>
+				</div>
+				<div class="s-user-info__id">
+					Id <span>134AbbdksBcs</span>
+				</div>
+			</div>
+
+			<nav class="sidebar__nav">
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-main.svg" alt="icon">
+						</span>
+							Главная
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-programs.svg" alt="icon">
+						</span>
+							Программы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link active">
+						<span class="menu__icon">
+							<img src="images/icon-menu-partners.svg" alt="icon">
+						</span>
+							Партнеру
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-profile.svg" alt="icon">
+						</span>
+							Профиль
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-exit.svg" alt="icon">
+						</span>
+							Выйти
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="s-purses">
+				<div class="s-purse s-purse--white">
+					<div class="s-purse__title">White-кошелек</div>
+					<div class="s-purse__value">39 999<span> GС</span></div>
+					<a href="#" class="s-purse__text">
+						<img src="images/icon-replenish.svg" alt="Пополнить">
+						Пополнить
+					</a>
+				</div>
+				<div class="s-purse s-purse--green">
+					<div class="s-purse__title">Green-кошелек</div>
+					<div class="s-purse__value">444 999<span> GC</span></div>
+					<a href="#" class="s-purse__text">
+						<img src="images/icon-withdraw2.svg" alt="Пополнить">
+						Вывести
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</aside>
+
+	<main class="main">
+		<div class="container">
+			<h1 class="main-title">Партнерская программа</h1>
+			<div class="row">
+				<div class="col col-partner-program-left">
+					<div class="row">
+						<div class="col col-md-33 col-lg-33">
+							<div class="block block--white b-bonus">
+								<div class="b-bonus__top">
+									<div class="b-bonus__title">Profit бонус</div>
+									<img src="images/icon-profit-lg.svg" alt="icon">
+								</div>
+								<div class="b-bonus__value">2 333 399<span> GC</span></div>
+								<div class="b-bonus__subtext">за месяц</div>
+							</div>
+						</div>
+						<div class="col col-md-33 col-lg-33">
+							<div class="block block--white b-bonus">
+								<div class="b-bonus__top">
+									<div class="b-bonus__title">Partner бонус</div>
+									<img src="images/icon-partners-lg.svg" alt="icon">
+								</div>
+								<div class="b-bonus__value">333 399<span> GC</span></div>
+								<div class="b-bonus__subtext">за месяц</div>
+							</div>
+						</div>
+						<div class="col col-md-33 col-lg-33">
+							<div class="block block--white b-bonus">
+								<div class="b-bonus__top">
+									<div class="b-bonus__title">Delta бонус</div>
+									<img src="images/icon-delta-lg.svg" alt="icon">
+								</div>
+								<div class="b-bonus__value">2 333 399<span> GC</span></div>
+								<div class="b-bonus__subtext">за месяц</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-md-50 col-lg-50">
+							<div class="b-to block block--white">
+								<div class="b-to__left">
+									<div class="b-to__title">Общий ТО</div>
+									<div class="b-to__value">23 333 999<span> GC</span></div>
+									<div class="b-to__subtext">Всего</div>
+									<div class="b-to-indicators">
+										<div class="b-to-indicators__item">
+											12 345
+											<span class="unit">GC /</span>
+											<span class="period">месяц</span>
+										</div>
+										<div class="b-to-indicators__item">
+											325 345
+											<span class="unit">GC /</span>
+											<span class="period">год</span>
+										</div>
+									</div>
+								</div>
+								<div class="b-to__right">
+									<div class="b-to__percentage">
+										<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="2.51654" y="9.9751" width="6.28344" height="2.30029" rx="1.15015" transform="rotate(-90 2.51654 9.9751)" fill="#2ADF91"/>
+											<path d="M2.8548 0.553273C3.25382 -0.00177187 4.0797 -0.00177306 4.47872 0.553271L6.80881 3.79447C7.28441 4.45602 6.81163 5.37818 5.99686 5.37818L1.33666 5.37818C0.521894 5.37818 0.0491108 4.45602 0.524704 3.79447L2.8548 0.553273Z" fill="#2ADF91"/>
+										</svg>
+										+22,2%
+									</div>
+									<svg class="b-to__chart" width="61" height="59" viewBox="0 0 61 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.66681 56.7027L10.219 34.1033C11.1699 31.5906 14.2782 30.7111 16.4047 32.353L18.3485 33.8539C20.3085 35.3673 23.1588 34.7543 24.3233 32.5688L27.6577 26.3109C29.2524 23.3181 33.614 23.5428 34.8926 26.6836L39.8062 38.753C41.2193 42.2239 46.2013 42.0203 47.3264 38.4458L58.8477 1.84375" stroke="#2ADF91" stroke-width="3" stroke-linecap="round"/>
+									</svg>
+									<a href="#" class="b-to__btn">Статистика</a>
+								</div>
+							</div>
+							<div class="b-to b-to--green block block--green">
+								<div class="b-to__left">
+									<div class="b-to__title">Общий ТО</div>
+									<div class="b-to__value">23 333 999<span> GC</span></div>
+									<div class="b-to__subtext">Всего</div>
+									<div class="b-to-indicators">
+										<div class="b-to-indicators__item">
+											12 345
+											<span class="unit">GC /</span>
+											<span class="period">месяц</span>
+										</div>
+										<div class="b-to-indicators__item">
+											325 345
+											<span class="unit">GC /</span>
+											<span class="period">год</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="b-to__right">
+									<div class="b-to__percentage">
+										<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="4.90228" y="0.444824" width="6.28344" height="2.30029" rx="1.15015" transform="rotate(90 4.90228 0.444824)" fill="#FD6E6E"/>
+											<path d="M4.56402 9.86665C4.165 10.4217 3.33913 10.4217 2.94011 9.86665L0.61001 6.62546C0.134417 5.9639 0.607199 5.04174 1.42197 5.04174L6.08216 5.04174C6.89693 5.04174 7.36971 5.9639 6.89412 6.62545L4.56402 9.86665Z" fill="#FD6E6E"/>
+										</svg>
+										-12,2%
+									</div>
+									<svg class="b-to__chart" width="67" height="50" viewBox="0 0 67 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.9024 47.7026L9.4307 21.0624C10.2506 18.1609 13.9074 17.2403 16.0035 19.4076V19.4076C17.9765 21.4477 21.3973 20.772 22.4466 18.135L27.7881 4.71063C28.3938 3.18844 29.8664 2.18945 31.5047 2.18945H37.6126C39.0312 2.18945 40.3436 2.94075 41.0619 4.16399L51.4076 21.7823C52.1259 23.0055 53.4384 23.7568 54.8569 23.7568H65.3257" stroke="#ACFFDB" stroke-width="3" stroke-linecap="round"/>
+									</svg>
+
+									<a href="#" class="b-to__btn">Статистика</a>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-50 col-lg-50">
+							<div class="promotions block block--black">
+								<div class="promotions__subtitle">Промо</div>
+								<h2 class="promotions__title">В даннный<br>момент<br>акций нет</h2>
+								<div class="promotions__desc">Вам придет<br>уведомлелние как<br>только она появится</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-md-50 col-lg-50">
+							<div class="block block--black partners-info partners-info--green">
+								<div class="partners-info__col">
+									<h5 class="partners-info__title">В команде</h5>
+									<div class="partners-info__value">44</div>
+									<div class="partners-info__subtitle">Личных</div>
+								</div>
+								<div class="partners-info__col">
+									<h5 class="partners-info__title">
+										<img src="images/icon-partners.svg" alt="icon">
+										Список партнеров
+									</h5>
+									<div class="partners-info__value">39 989</div>
+									<div class="partners-info__subtitle">Всего</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-50 col-lg-50">
+							<div class="block block--green partners-info partners-info--black">
+								<div class="partners-info__col">
+									<h5 class="partners-info__title">Прирост за месяц</h5>
+									<div class="partners-info__value">3 994</div>
+									<div class="partners-info__subtitle">партнера</div>
+								</div>
+								<div class="partners-info__col">
+									<svg class="partners-info__chart" width="217" height="67" viewBox="0 0 217 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.78986 65.1687L27.0947 45.7721C34.0776 40.4195 42.6306 37.5186 51.429 37.5186H65.35C72.7449 37.5186 79.9677 35.2873 86.0741 31.1164L90.4942 28.0973C102.631 19.8073 118.964 21.4064 129.263 31.893V31.893C139.795 42.6169 156.59 44.0159 168.75 35.1823L214.52 1.93555" stroke="white" stroke-width="3" stroke-linecap="round"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="b-partner-program block block--white">
+								<div class="b-partner-program__head">
+									<div class="b-partner-program__left">
+										<h5 class="b-partner-program__title">Партнерская программа:</h5>
+
+										<ul class="b-partner-program-links">
+											<li class="b-partner-program-links__item">
+												<a href="#" class="b-partner-program-links__link b-partner-program-links__link--video">
+													Смотреть видео
+												</a>
+											</li>
+											<li class="b-partner-program-links__item">
+												<a href="#" class="b-partner-program-links__link b-partner-program-links__link--pdf">
+													Открыть PDF
+												</a>
+											</li>
+											<li class="b-partner-program-links__item">
+												<a href="#" class="b-partner-program-links__link b-partner-program-links__link--promo">
+													Промо-материалы
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="b-partner-program__right">
+										<div class="partner-program-income">
+											<div class="partner-program-income__head">
+												<div class="partner-program-income__before">до</div>
+												<div class="partner-program-income__value">10<span> %</span></div>
+											</div>
+											<div class="partner-program-income__text">С каждого парнера</div>
+										</div>
+										<div class="partner-program-income">
+											<div class="partner-program-income__head">
+												<div class="partner-program-income__before">до</div>
+												<div class="partner-program-income__value">5<span> %</span></div>
+											</div>
+											<div class="partner-program-income__text">С доходов парнера</div>
+										</div>
+									</div>
+								</div>
+								<div class="b-partner-program__desc">
+									Пользователю выплачивается % от суммы пополнений в White-кошелек партнерами по 1 линии (т.е. когда партнер из 1 линии пополняет White-кошелек, его пригласителю выплачивается % от пополнения).
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col col-partner-program-right">
+					<div class="my-partners block block--white">
+						<h3 class="my-partners__title">Мои партнеры</h3>
+						<ul class="my-partners-list">
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">2</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Константин Константинопольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">22</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Вальдемар Вальдемарский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">12 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">56</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Николай Никольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">1 121 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">2</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Константин Константинопольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">22</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Вальдемар Вальдемарский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">12 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">56</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Николай Никольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">1 121 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">2</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Константин Константинопольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">22</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Вальдемар Вальдемарский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">12 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">56</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Николай Никольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">1 121 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">2</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Константин Константинопольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">22</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Вальдемар Вальдемарский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">12 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+							<li class="my-partners-list__item">
+								<div class="my-partners-list__circle">
+									<div class="my-partners-list__level">56</div>
+									<div class="my-partners-list__level-text">уровень</div>
+								</div>
+								<div class="my-partners-list__right">
+									<div class="my-partners-list__id">Id <span>134AbbdksBcs</span></div>
+									<div class="my-partners-list__name">Николай Никольский</div>
+									<div class="my-partners-list__row">
+										<div class="my-partners-list__to">Общий ТО</div>
+										<div class="my-partners-list__value">1 121 207 590<span> GC</span></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="overlay"></div>
+ 
+	<script src="js/app.min.js"></script>
+ 
+</body>
+</html>
