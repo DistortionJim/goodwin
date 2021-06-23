@@ -83,7 +83,7 @@
 									</li>
 								</ul>
 							</div>
-							<a href="#" class="h-purse-info__btn h-purse-info__btn--dark btn">
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--dark btn">
 								<img src="images/icon-top-up.svg" alt="top-up">
 								Пополнить
 							</a>
@@ -127,10 +127,10 @@
 								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--dark">
 									<div class="h-purse-info-blocks__title">Доступно</div>
 									<div class="h-purse-info-blocks__value">325 345 GC</div>
-									<div class="h-purse-info-blocks__text">
+									<a href="#modal-withdraw-money" data-fancybox class="h-purse-info-blocks__text">
 										<img src="images/icon-withdraw.svg" alt="Вывести">
 										Вывести
-									</div>
+									</a>
 								</div>
 								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--light">
 									<div class="h-purse-info-blocks__title">Заморожено</div>
@@ -142,7 +142,7 @@
 								</div>
 							</div>
 
-							<a href="#" class="h-purse-info__btn h-purse-info__btn--white btn">
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--white btn">
 								<img src="images/icon-reinvest.svg" alt="reinvest">
 								Реинвестировать
 							</a>
@@ -237,7 +237,7 @@
 				<div class="s-purse s-purse--white">
 					<div class="s-purse__title">White-кошелек</div>
 					<div class="s-purse__value">39 999<span> GС</span></div>
-					<a href="#" class="s-purse__text">
+					<a href="#modal-replenish-white-purse" data-fancybox class="s-purse__text">
 						<img src="images/icon-replenish.svg" alt="Пополнить">
 						Пополнить
 					</a>
@@ -245,8 +245,8 @@
 				<div class="s-purse s-purse--green">
 					<div class="s-purse__title">Green-кошелек</div>
 					<div class="s-purse__value">444 999<span> GC</span></div>
-					<a href="#" class="s-purse__text">
-						<img src="images/icon-withdraw2.svg" alt="Пополнить">
+					<a href="#modal-withdraw-money" data-fancybox class="s-purse__text">
+						<img src="images/icon-withdraw2.svg" alt="Вывести">
 						Вывести
 					</a>
 				</div>
@@ -273,7 +273,7 @@
 								<div class="profile-form__input-inner">
 									<div class="profile-form__input-row">
 										<input type="text" class="profile-form__input input" value="Константин Петров" disabled>
-										<button class="profile-form__btn profile-form__btn--edit active">
+										<button class="profile-form__btn profile-form__btn--edit profile-form__btn--name active">
 											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
 												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
@@ -300,6 +300,12 @@
 								<div class="profile-form__input-inner">
 									<div class="profile-form__input-row">
 										<input type="email" class="profile-form__input" value="konstantinpetrov@gmail.com " disabled>
+										<a href="#modal-change-email" data-fancybox class="profile-form__btn profile-form__btn--edit active">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
+											</svg>
+										</a>
 									</div>
 									<div class="profile-form__placeholder">Email</div>
 								</div>
@@ -314,13 +320,19 @@
 								</div>
 								<div class="profile-form__input-inner">
 									<div class="profile-form__input-row">
-										<input type="password" class="profile-form__input profile-form__input--password" value="12456789qwerty" disabled>
+										<input type="email" class="profile-form__input profile-form__input--email" value="12456789qwerty" disabled>
 										<button class="profile-form__show-pass">
 											<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M6.34375 12.2591C6.34375 10.0329 8.14839 8.22827 10.3745 8.22827H10.6265C12.8526 8.22827 14.6573 10.0329 14.6573 12.2591C14.6573 14.4852 12.8526 16.2898 10.6265 16.2898H10.3745C8.14839 16.2898 6.34375 14.4852 6.34375 12.2591Z" stroke="#2ADF91" stroke-width="2"/>
 												<path d="M19.3575 11.4402C14.4659 6.54857 6.53505 6.54857 1.64343 11.4402" stroke="#2ADF91" stroke-width="3"/>
 											</svg>
 										</button>
+										<a href="#modal-change-password" data-fancybox class="profile-form__btn profile-form__btn--edit active">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
+											</svg>
+										</a>
 									</div>
 									<div class="profile-form__placeholder">Пароль</div>
 								</div>
@@ -401,7 +413,7 @@
 
 						<div class="telegram-security">
 							<form class="telegram-security__form">
-								<div class="telegram-security__title">Безопасность:</div>
+								<h6 class="telegram-security__title">Безопасность:</h6>
 								<div class="telegram-security__row">
 									<div class="telegram-security__col">
 										<div class="telegram-security__text">Запрашивать код при входе в  кабинет</div>
@@ -432,6 +444,154 @@
 			</div>
 		</div>
 	</main>
+
+	<div class="modal modal--change-email block block--black" id="modal-change-email">
+		<div class="modal__inner">
+			<div class="block block--white">
+				<form class="modal__form form" id="change-email">
+					<h3 class="form__title">Смена e-mail</h3>
+					<div class="form__row">
+						<input type="email" class="form__input input" name="email">
+					</div>
+					<div class="form__subtext">Введите новый адрес электронной почты</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+					</div>
+				</form>
+			</div>
+			<form class="modal__form form" id="confirm-email">
+				<h3 class="form__title">Подтверждение e-mail</h3>
+				<div class="form__row">
+					<input type="email" class="form__input input" name="code">
+				</div>
+				<div class="form__subtext">Введите код отправленный на почту</div>
+				<div class="form__row">
+					<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal--change-password block block--white" id="modal-change-password">
+		<form class="modal__form form" id="change-password">
+			<h3 class="form__title">Смена пароля</h3>
+			<div class="form__row">
+				<input type="password" class="form__input input" name="password" placeholder="Введите старый пароль">
+			</div>
+			<div class="form__row">
+				<input type="password" class="form__input input" name="new_password" placeholder="Введите новый пароль">
+			</div>
+			<div class="form__row">
+				<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+			</div>
+			<div class="form__row text-center">
+				<a href="#" data-fancybox class="form__forgot-password">Забыли пароль?</a>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal modal--replenish-purse block block--grey" id="modal-replenish-white-purse">
+		<form class="modal__form form" id="replenish-white-purse">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">79 999 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.9999999</span></div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal modal--withdraw-money block block--grey" id="modal-withdraw-money">
+		<form class="modal__form form" id="withdraw-money">
+			<div class="withdraw-money">
+				<div class="block block--green">
+					<h5 class="withdraw-money__title">Доступно для вывода с<br>Green-кошелька</h5>
+					<div class="withdraw-money__value">1 579 999 <span>GC</span></div>
+					<div class="withdraw-money__subtitle">Временно заморожено</div>
+					<div class="withdraw-money__frozen">3099 <span>GC</span></div>
+					<div class="withdraw-money__text">в соответствии с условиями выплат  Вы получите уведомление о разморозке в кабинет и в Telegram</div>
+				</div>
+				<div class="withdraw-money__right">
+					<div class="form__row">
+						<input type="text" class="form__input input" name="purse_address">
+					</div>
+					<div class="form__subtext">адрес вашего BTC кошелька</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="withdrawal_amount">
+					</div>
+					<div class="form__subtext">Сумма вывода</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+					</div>
+					<div class="form__row">
+						<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+					</div>
+					<div class="form__row">
+						<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+					</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal modal--going-to-make block block--grey" id="modal-going-to-make">
+		<div class="going-to-make">
+			<div class="going-to-make__top">
+				<div class="going-to-make__left">
+					<h5 class="going-to-make__title">Вы собираетесь<br>внести</h5>
+					<div class="going-to-make__row">
+						<div class="going-to-make__value">79 999<span> GС</span></div>
+						<div class="going-to-make__sum">
+							<div class="going-to-make__sum-text">Сумма к оплате</div>
+							<div class="going-to-make__sum-value">BTC <span>0.9999999</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="going-to-make__right block block--green">
+					<div class="going-to-make__subtitle">Для пополнения осталось</div>
+					<div class="going-to-make__time">
+						<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.66619 4.58154C3.54655 4.58154 1.01758 7.11051 1.01758 10.2302C1.01758 13.3498 3.54655 15.8788 6.66619 15.8788C9.78583 15.8788 12.3148 13.3498 12.3148 10.2302C12.3148 7.11051 9.78583 4.58154 6.66619 4.58154Z" fill="#11D076" stroke="white" stroke-width="2"/>
+							<rect x="5.00043" y="4.9292" width="4.45145" height="3.33192" rx="1.66596" transform="rotate(-90 5.00043 4.9292)" fill="white"/>
+							<rect x="2.9834" y="0.300781" width="7.36639" height="2.40288" rx="1.20144" fill="white"/>
+							<rect x="4.90454" y="10.291" width="4.20375" height="2.40288" rx="1.20144" transform="rotate(-45 4.90454 10.291)" fill="white"/>
+						</svg>
+						19:30
+					</div>
+				</div>
+			</div>
+			<div class="going-to-make-code">
+				<div class="going-to-make-code__text">Для того, чтобы пополнить баланс скопируйте адрес кошелька</div>
+				<div class="going-to-make-code__fill">
+					<button class="going-to-make-code__btn" data-link="урц5y4iovw9ucgp9suj959pecu9ugm49gz">
+						<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="5.41013" y="1.51367" width="11.1389" height="13.373" rx="3" stroke="#2ADF91" stroke-width="2"/>
+							<rect x="1.12891" y="5.8584" width="11.1389" height="13.373" rx="3" fill="white" stroke="#2ADF91" stroke-width="2"/>
+						</svg>
+					</button>
+					<div class="going-to-make-code__value">урц5y4iovw9ucgp9suj959pecu9ugm49gz</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="overlay"></div>
  
