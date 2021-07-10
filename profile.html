@@ -178,10 +178,6 @@
 			<div class="s-user-info">
 				<div class="s-user-info__container">
 					<div class="s-user-info__name">Константин Петров</div>
-					<div class="s-user-info__level">
-						<span>3</span>
-						<div class="s-user-info__level-text">уровень</div>
-					</div>
 				</div>
 				<div class="s-user-info__id">
 					Id <span>134AbbdksBcs</span>
@@ -320,7 +316,7 @@
 								</div>
 								<div class="profile-form__input-inner">
 									<div class="profile-form__input-row">
-										<input type="email" class="profile-form__input profile-form__input--email" value="12456789qwerty" disabled>
+										<input type="password" class="profile-form__input profile-form__input--email" value="12456789qwerty" disabled>
 										<button class="profile-form__show-pass">
 											<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M6.34375 12.2591C6.34375 10.0329 8.14839 8.22827 10.3745 8.22827H10.6265C12.8526 8.22827 14.6573 10.0329 14.6573 12.2591C14.6573 14.4852 12.8526 16.2898 10.6265 16.2898H10.3745C8.14839 16.2898 6.34375 14.4852 6.34375 12.2591Z" stroke="#2ADF91" stroke-width="2"/>
@@ -517,7 +513,7 @@
 	</div>
 
 	<div class="modal modal--withdraw-money block block--grey" id="modal-withdraw-money">
-		<form class="modal__form form" id="withdraw-money">
+		<div class="modal__inner" id="withdraw-money">
 			<div class="withdraw-money">
 				<div class="block block--green">
 					<h5 class="withdraw-money__title">Доступно для вывода с<br>Green-кошелька</h5>
@@ -528,30 +524,60 @@
 					<div class="withdraw-money__text">в соответствии с условиями выплат  Вы получите уведомление о разморозке в кабинет и в Telegram</div>
 				</div>
 				<div class="withdraw-money__right">
-					<div class="form__row">
-						<input type="text" class="form__input input" name="purse_address">
+					<div class="withdraw-money__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
 					</div>
-					<div class="form__subtext">адрес вашего BTC кошелька</div>
-					<div class="form__row">
-						<input type="text" class="form__input input" name="withdrawal_amount">
+					<div class="withdraw-money__forms">
+						<form class="withdraw-money__form" id="withdraw-money-btc">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего BTC кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
+						<form class="withdraw-money__form" id="withdraw-money-usdt">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего USDT кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
 					</div>
-					<div class="form__subtext">Сумма вывода</div>
-					<div class="form__row">
-						<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
-					</div>
-					<div class="form__row">
-						<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
-					</div>
-					<div class="form__row">
-						<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
-					</div>
-					<div class="form__row">
-						<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
-					</div>
+
 				</div>
 			</div>
 
-		</form>
+		</div>
 	</div>
 
 	<div class="modal modal--going-to-make block block--grey" id="modal-going-to-make">
