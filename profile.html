@@ -487,10 +487,13 @@
 	</div>
 
 	<div class="modal modal--replenish-purse block block--grey" id="modal-replenish-white-purse">
-		<form class="modal__form form" id="replenish-white-purse">
+		<form class="modal__form form" id="replenish-white-purse-btc">
 			<div class="replenish-purse">
 				<div class="replenish-purse__left">
 					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
+					</div>
 					<div class="form__input-title">1 <span>GC</span> = 1$</div>
 					<div class="form__row">
 						<input type="text" class="form__input input" name="replenish">
@@ -501,6 +504,32 @@
 					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
 					<div class="replenish-purse__value">79 999 <span>GС</span></div>
 					<div class="replenish-purse__btc">BTC <span>0.9999999</span></div>
+					<div class="replenish-purse__commission">Комиссия 3%</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+		<form class="modal__form form" id="replenish-white-purse-usdt">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span>BTC</span><span class="active">USDT (TRC-20)</span>
+					</div>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">78 888 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.8888</span></div>
 					<div class="replenish-purse__commission">Комиссия 3%</div>
 					<div class="form__row">
 						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
