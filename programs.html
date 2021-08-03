@@ -1097,21 +1097,57 @@
 	</div>
 
 	<div class="modal modal-urgent-withdrawal block block--grey" id="modal-urgent-withdrawal">
-		<div class="urgent-withdrawal__range range">
-			<div class="range__output">
-				<input type="number" value="500" min="0" max="1567">
-				<span>GS</span>
+
+		<form class="modal-urgent-withdrawal__form">
+
+			<div class="modal-urgent-withdrawal__top">
+				<div class="modal-urgent-withdrawal__head block block--green">
+					<h2 class="modal-urgent-withdrawal__title">Срочный вывод</h2>
+					<h5 class="modal-urgent-withdrawal__subtitle">Доступно для разморозки:</h5>
+					<div class="modal-urgent-withdrawal__value">9 999 999 <span>GC</span></div>
+					<div class="modal-urgent-withdrawal__text">Комиссия Extra Fee за срочный вывод депозита: 10%</div>
+				</div>
+				<div class="modal-urgent-withdrawal__left">
+					<div class="modal-urgent-withdrawal__range range">
+						<div class="modal-urgent-withdrawal__range-text">Введите сумму для экстренной разморозки</div>
+						<div class="range__output">
+							<input type="number" value="0" min="0" max="1567">
+						</div>
+						<input type="range"
+									 class="modal-urgent-withdrawal__range"
+									 min="0"
+									 max="1567"
+									 value="0">
+						<div class="range__footer">
+							<div class="range__min">0<span> GC</span></div>
+							<div class="range__max">MAX</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
-			<input type="range"
-						 class="replenishment-purse__range"
-						 min="0"
-						 max="1567"
-						 value="500">
-			<div class="range__footer">
-				<div class="range__min">0<span> GC</span></div>
-				<div class="range__max">MAX</div>
+
+			<div class="modal-urgent-withdrawal__middle">
+				<div class="modal-urgent-withdrawal__middle-left">
+					<div class="modal-urgent-withdrawal__middle-range">
+						<div class="modal-urgent-withdrawal__middle-text">Вы собираетесь разморозить:</div>
+						<div class="range__value" id="range-val"><span class="value">0</span> <span>GC</span></div>
+					</div>
+				</div>
+				<div class="modal-urgent-withdrawal__middle-right">
+					<div class="modal-urgent-withdrawal__middle-range">
+						<div class="modal-urgent-withdrawal__middle-text">Итого в “Доступно” придет:</div>
+						<div class="range__value" id="range-val-total"><span class="value">0</span> <span>GC</span></div>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<div class="modal-urgent-withdrawal__footer">
+				<button class="modal-urgent-withdrawal__btn btn btn--green">Подтвердить</button>
+				<a href="#" data-fancybox-close class="modal-urgent-withdrawal__btn btn btn--green-light">Отменить</a>
+			</div>
+
+		</form>
 	</div>
 
 
@@ -1146,38 +1182,40 @@
 
 	<div class="modal modal-output-from-program block block--grey" id="modal-output-from-program-2">
 
-		<div class="modal-output-from-program__top">
-			<div class="modal-output-from-program__head block block--green">
-				<h2 class="modal-output-from-program__title">Вывод из<br>программы</h2>
-				<h5 class="modal-output-from-program__subtitle modal-output-from-program__subtitle--mb">В программе: </h5>
-				<div class="modal-output-from-program__value">9 999 999 <span>GC</span></div>
-				<p class="modal-output-from-program__text">Вы можете частично или полностью вывести тело депозита. При полном выводе программа закроется.</p>
-			</div>
-			<form class="modal-output-from-program__left modal-output-from-program__with-range">
-				<div class="modal-output-from-program__range range">
-					<div class="modal-output-from-program__range-text">Укажите сумму вывода в Green-кошелек</div>
-					<div class="range__output">
-						<input type="number" value="0" min="0" max="1567">
-					</div>
-					<input type="range"
-								 class="modal-output-from-program__range"
-								 min="0"
-								 max="1567"
-								 value="0">
-					<div class="range__footer">
-						<div class="range__min">0<span> GC</span></div>
-						<div class="range__max">MAX</div>
-					</div>
-
-					<div class="range__value"><span class="value">0</span> <span>GC</span></div>
+		<form class="modal-output-from-program__form">
+			<div class="modal-output-from-program__top">
+				<div class="modal-output-from-program__head block block--green">
+					<h2 class="modal-output-from-program__title">Вывод из<br>программы</h2>
+					<h5 class="modal-output-from-program__subtitle modal-output-from-program__subtitle--mb">В программе: </h5>
+					<div class="modal-output-from-program__value">9 999 999 <span>GC</span></div>
+					<p class="modal-output-from-program__text">Вы можете частично или полностью вывести тело депозита. При полном выводе программа закроется.</p>
 				</div>
-			</form>
-		</div>
+				<div class="modal-output-from-program__left modal-output-from-program__with-range">
+					<div class="modal-output-from-program__range range">
+						<div class="modal-output-from-program__range-text">Укажите сумму вывода в Green-кошелек</div>
+						<div class="range__output">
+							<input type="number" value="0" min="0" max="1567">
+						</div>
+						<input type="range"
+									 class="modal-output-from-program__range"
+									 min="0"
+									 max="1567"
+									 value="0">
+						<div class="range__footer">
+							<div class="range__min">0<span> GC</span></div>
+							<div class="range__max">MAX</div>
+						</div>
 
-		<div class="modal-output-from-program__footer">
-			<button class="modal-output-from-program__btn btn btn--green">Подтвердить</button>
-			<a href="#" data-fancybox-close class="modal-output-from-program__btn btn btn--green-light">Отменить</a>
-		</div>
+						<div class="range__value"><span class="value">0</span> <span>GC</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-output-from-program__footer">
+				<button class="modal-output-from-program__btn btn btn--green">Подтвердить</button>
+				<a href="#" data-fancybox-close class="modal-output-from-program__btn btn btn--green-light">Отменить</a>
+			</div>
+		</form>
 
 	</div>
 
