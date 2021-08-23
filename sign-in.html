@@ -48,6 +48,9 @@
 				<div class="form__row text-center">
 					<a href="#" class="form__registration">Регистрация</a>
 				</div>
+				<div class="form__row text-center">
+					<a href="#modal-recovery-password" data-fancybox class="form__recovery">Забыли пароль?</a>
+				</div>
 
 				<ul class="auth-socials">
 					<li class="auth-socials__item">
@@ -83,6 +86,21 @@
 			</form>
 		</div>
 	</main>
+
+	<div class="modal modal--recovery-password modal-recovery-password block block--white" id="modal-recovery-password">
+		<form class="modal__form form" id="recovery-password-form">
+			<h3 class="form__title">Восстановление пароля</h3>
+			<h6 class="form__subtitle">Инструкция по смене пароля будет отправлена на указанный вами E-mail.</h6>
+			<div class="form__row form__row--input">
+				<input type="email" class="form__input input" name="email" placeholder="Введите e-mail">
+			</div>
+			<p class="form__message">Инструкция отправлена! Проверьте почту</p>
+			<div class="form__row btn-row">
+				<button class="form__submit btn btn--green-light"data-fancybox-close="">Отменить</button>
+				<button type="submit" class="form__submit btn btn--green">Отправить</button>
+			</div>
+		</form>
+	</div>
 
 	<script src="js/app.min.js"></script>
  
